@@ -95,7 +95,7 @@ public class RestAPIController {
 		}
 	}
 
-	@PostMapping("/upvote/{id}")
+	@PutMapping("/upvote/{id}")
 	public void upvoteSong(@RequestBody Song _song, @PathVariable long id){
 		Song song = songServices.getSongById(id).get();
 
